@@ -1,0 +1,36 @@
+{
+  "name": "happymmal",
+  "version": "1.0.0",
+  "description": "mall前端代码",
+  "main": "index.js",
+  "scripts": {
+    "start_mac": "WEBPACK_ENV=dev  webpack-dev-server --inline --port 8088",
+    "start": "set WEBPACK_ENV=dev && webpack-dev-server --inline --port 8088",
+    "dev": "webpack --mode development --watch --progress",
+    "build": "set WEBPACK_ENV=online && webpack-dev-server -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kakachake/happymmal.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kakachake/happymmal/issues"
+  },
+  "homepage": "https://github.com/kakachake/happymmal#readme",
+  "devDependencies": {
+    "css-loader": "^3.0.0",
+    "ejs-loader": "^0.3.3",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^0.5.9",
+    "webpack-dev-server": "^1.16.5"
+  },
+  "dependencies": {
+    "file-loader": "^4.0.0",
+    "webpack": "^1.15.0"
+  }
+}
